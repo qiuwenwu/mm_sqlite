@@ -26,7 +26,7 @@ class DB extends Sql {
  */
 DB.prototype.addList = async function(list) {
 	var bl_num = 0;
-	var len = list.length;
+	const len = list.length;
 	for (var i = 0; i < len; i++) {
 		var bl = await this.addObj(list[i]);
 		if(bl)
@@ -61,7 +61,7 @@ DB.prototype.fields = async function(table) {
 	}
 	var sql = "PRAGMA table_info(`{0}`);".replace('{0}', table);
 	var list = await this.run(sql);
-	var len = list.length;
+	const len = list.length;
 	for (var i = 0; i < len; i++) {
 		list[i].pk = list[i].pk ? true : false;
 		list[i].notnull = list[i].notnull ? true : false;

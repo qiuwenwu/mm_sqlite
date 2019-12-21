@@ -1,6 +1,6 @@
 {
   "name": "mm_sqlite",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "这是超级美眉sqlite帮助函数模块，用于便捷操作sqlite，使用await方式，可以避免嵌套函数",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/qiuwenwu/mm_sqlite#readme",
   "dependencies": {
-    "mm_sql": "^1.3.3",
+    "mm_sql": "^1.3.5",
     "sqlite3": "^4.1.0"
   }
 }
