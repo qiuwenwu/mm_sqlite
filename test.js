@@ -38,7 +38,7 @@ console.log('开始测试');
 // 	// 	password: "a"
 // 	// });
 // 	var ret = await db.addList(addArr);
-// 	console.log("添加：" + $.toJson(ret), db.error);
+// 	console.log("添加：" + JSON.stringify(ret), db.error);
 // 	if(!ret)
 // 	{
 // 		console.log(db.sql);
@@ -57,7 +57,7 @@ console.log('开始测试');
 // 		});
 // 	}
 // 	ret = await db.setList(setArr);
-// 	console.log("修改：" + $.toJson(ret), db.error);
+// 	console.log("修改：" + JSON.stringify(ret), db.error);
 
 // 	var delArr = [];
 // 	for (var i = 1; i <= addArr.length; i++) {
@@ -70,12 +70,12 @@ console.log('开始测试');
 // 		}
 // 	}
 // 	ret = await db.delList(delArr);
-// 	console.log("删除：" + $.toJson(ret), db.error);
+// 	console.log("删除：" + JSON.stringify(ret), db.error);
 
 
 
 // 	// ret = await db.get({ username: "username1" });
-// 	// console.log("获取：" + $.toJson(ret,true), db.error);
+// 	// console.log("获取：" + JSON.stringify(ret,true), db.error);
 // }
 
 // test();
@@ -91,11 +91,11 @@ async function testFM() {
 
 	db.key = 'uid';
 	var obj = await db.getObj({});
-	console.log("获取：" + $.toJson(obj), db.error);
+	console.log("获取：" + JSON.stringify(obj), db.error);
 
 	obj.username = "张三";
 	obj = await db.getObj({});
-	console.log("获取：" + $.toJson(obj), db.error);
+	console.log("获取：" + JSON.stringify(obj), db.error);
 }
 
 testFM();
@@ -128,9 +128,9 @@ testNew();
 // 	bl = await db.addTable('test6', 'uid', 'int');
 // 	console.log("添加表" + bl, db.error);
 // 	var arr = await db.tables('t*');
-// 	console.log("获取表" + $.toJson(arr), db.error);
+// 	console.log("获取表" + JSON.stringify(arr), db.error);
 // 	var list = await db.fields('test');
-// 	console.log("获取字段信息" + $.toJson(list), db.error);
+// 	console.log("获取字段信息" + JSON.stringify(list), db.error);
 // 	
 // 	db.table = 'test';
 // 	bl = await db.field_del('set6');
