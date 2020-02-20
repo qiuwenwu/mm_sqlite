@@ -1,6 +1,6 @@
 {
   "name": "mm_sqlite",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "这是超级美眉sqlite帮助函数模块，用于便捷操作sqlite，使用await方式，可以避免嵌套函数",
   "main": "index.js",
   "scripts": {
